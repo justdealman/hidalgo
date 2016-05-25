@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Hidalgo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1060, user-scalable=yes">
+	<!--<link href="./favicon.ico" rel="shortcut icon">-->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/jquery.js"></script>
+	<!--[if IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="panel">
+			<ul class="nav">
+				<li class="active"><a href="#">Наши  партнеры</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Галерея</a></li>
+			</ul>
+			<p class="lk-open"><span>Личный кабинет</span></p>
+			<ul class="lk-drop">
+				<li><a href="#" data-open="enter">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+				<li><a href="#">Личный кабинет</a></li>
+				<li><a href="#">Корзина</a></li>
+				<li><a href="#">Мои заказы</a></li>
+			</ul>
+		</div>
+		<header>
+			<a href="/"><img src="./img/logo.png" width="115" height="125" class="logo" alt=""></a>
+			<p class="description">Лечебно-профилактические препараты для лошадей на основе уникальных комплексов лекарственных трав Горного Алтая</p>
+			<ul class="phones">
+				<li><a href="tel:+73852523764">+7 (3852) 52-37-64</a></li>
+				<li><a href="tel:+79236440644">+7 923 644-0-644</a></li>
+			</ul>
+			<p class="ask"><span data-open="ask">задать вопрос</span></p>
+			<p class="basket">В вашей корзине <a href="#">2 товара</a><br>
+			на сумму 14 567 руб.</p>
+			<div class="search">
+				<input type="text" placeholder="Поиск">
+				<input type="submit" value="">
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="#">
+						<p>Каталог</p>
+						<i class="icon-1"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Бонусная программа</p>
+						<i class="icon-2"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Компания</p>
+						<i class="icon-3"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Доставка<br> и оплата</p>
+						<i class="icon-4"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Отзывы, награды</p>
+						<i class="icon-5"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Контакты</p>
+						<i class="icon-6"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="contacts-b">
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li>Спортивная подготовка</li>
+			</ul>
+			<h1>Наши <span>партнеры в городах России</span></h1>
+			<div id="map">
+				<script src="https://maps.googleapis.com/maps/api/js"></script>
+				<script>
+					function initialize() {
+						var mapCanvas = document.getElementById('map');
+						var mapOptions = {
+							center: new google.maps.LatLng(36, 15),
+							zoom: 5,
+							disableDefaultUI: true,
+							zoomControl: true,
+							scrollwheel: false
+						}
+						var map = new google.maps.Map(mapCanvas, mapOptions);
+						var mainIcon = './img/pin-icon-2.png';
+						var place1 = new google.maps.LatLng(36, 15);
+						var marker1 = new google.maps.Marker({
+							position: place1,
+							map: map,
+							icon: mainIcon
+						});
+						$('.map-i').bind('click', function() {
+							map.set('scrollwheel', true);
+						});
+						$('.map-i').siblings().bind('click', function() {
+							map.set('scrollwheel', false);
+						});
+					}
+					google.maps.event.addDomListener(window, 'load', initialize);
+				</script>
+			</div>
+			<div class="core">
+				<div>
+					<h2>Москва</h2>
+					<div>
+						<h3>Все для лошади и всадника</h3>
+						<p>Адрес: <span>109240 г. Москва, ул. Верхняя Радищевская, д.4, стр. 3-4-5.</span></p>
+						<p>Тел.: <span>(495) 502-93-32, тел/факс (495) 935-87-76</span></p>
+						<p>Веб-сайт: <span><a href="#">www.bega1.ru</a></span></p>
+					</div>
+					<div>
+						<h3>Конный магазин «Шевалье»</h3>
+						<p>Адрес: <span>г. Москва, ул. Лиственничная аллея, 12, корп. 4</span></p>
+						<p>Тел.: <span>(495) 977-64-36, (916) 657-96-85</span></p>
+						<p>E-mail: <span>borisov-at@yandex.ru</span></p>
+						<p>Веб-сайт: <span><a href="#">www.shevalie.horse.ru</a></span></p>
+					</div>
+					<div>
+						<h3>«Гандикап»</h3>
+						<p>E-mail: <span>gandikap06@mail.ru</span></p>
+						<p>Веб-сайт: <span><a href="#">www.gandikap.ru</a></span></p>
+						<ul>
+							<li>
+								<h5>Магазин «Гандикап» на ул. Лескова</h5>
+								<p>Адрес: <span>127543, г. Москва, ул. Лескова, д. 25.</span></p>
+								<p>Тел.: <span>(499) 205-03-53, моб. +7 925 744 32 80</span></p>
+							</li>
+							<li>
+								<h5>Магазин «Гандикап» на ОУСЦ «Планерная» </h5>
+								<p>Адрес: <span>141408, Россия, Московская обл., Химки-8, пос. Спартак, Олимпийский спортивно-учебный центр "Планерная".</span></p>
+								<p>Тел.: <span>(495) 971-19-70</span></p>
+								<p>Магазин находится в здании нового манежа.</p>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Московский конный магазин</h3>
+						<p>Тел.: <span>(495) 506-51-02</span></p>
+						<p>E-mail: <span>info@horseshop.ru</span></p>
+						<p>Веб-сайт: <span><a href="#">www.horseshop.ru</a></span></p>
+						<ul>
+							<li>
+								<h5>Магазин «Гандикап» на ул. Лескова</h5>
+								<p>Адрес: <span>г. Москва, ул. Мишина, д.12.</span></p>
+								<p>Тел.: <span>(495) 612-47-73</span></p>
+								<p>E-mail: <span><a href="mailto:sever@horseshop.ru">sever@horseshop.ru</a></span></p>
+								<p>Метро "Динамо".</p>
+							</li>
+							<li>
+								<h5>Магазин «На востоке»</h5>
+								<p>Адрес: <span>г. Москва, ул. Электродная, д. 2, стр.12.</span></p>
+								<p>Тел.: <span>(495) 380-00-26</span></p>
+								<p>E-mail: <span><a href="vostok@horseshop.ru">vostok@horseshop.ru</a></span></p>
+								<p>Метро "Шоссе Энтузиастов".</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<h2>Санкт-Петербург</h2>
+					<div>
+						<h3>«Фолиант»</h3>
+						<p>Адрес: <span>г. Санкт-Петербург, ул. Шкапина, д. 6.</span></p>
+						<p>Тел.: <span>(812) 715-08-24, 715-08-32/span></p>
+						<p>E-mail: <span>shop@foliant.su</span></p>
+						<p>Веб-сайт: <span><a href="#">www.foliant.su</a></span></p>
+					</div>
+					<div>
+						<h3>«Био-Кор»</h3>
+						<ul>
+							<li>
+								<p>Адрес: <span>г. Санкт-Петербург, ул. Бабушкина, 52 (вход со двора)</span></p>
+							</li>
+							<li>
+								<p>Адрес: <span>г. Санкт-Петербург, ул. Васи Алексеева, д. 13/22</span></p>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h3>«Верные друзья»</h3>
+						<ul>
+							<li>
+								<p>Адрес: <span>г. Санкт-Петербург, пр. Энгельса, д.131, корп.1</span></p>
+								<p>Тел.: <span>+7 (812) 517-42-26, круглосуточно<br> ежедневно, без обеда и выходных</span></p>
+							</li>
+							<li>
+								<p>Адрес: <span>г. Санкт-Петербург, ул. Демьяна Бедного, д. 26, корп.1</span></p>
+								<p>Тел.: <span>+7 (812) 497-62-52<br> ежедневно, без обеда и выходных</span></p>
+							</li>
+							<li>
+								<p>Адрес: <span>г. Санкт-Петербург, Серебристый бульвар, 16/2</span></p>
+								<p>Тел.: <span>+7 (812) 300-22-12<br> ежедневно, без обеда и выходных</span></p>
+							</li>
+							<li>
+								<p>Адрес: <span>Ленинградская обл., п. Кузьмоловский, ул. Рядового Иванова, д. 6 В</span></p>
+								<p>Тел.: <span>+7 (901) 304-13-67<br> ежедневно, без обеда и выходных</span></p>
+							</li>
+						</ul>
+					</div>
+					<h2>Тюмень</h2>
+					<div>
+						<h3>Конно-спортивный магазин «Амазонка»</h3>
+						<p>Адрес: <span>Тюменская область, поселок Боровский</span></p>
+						<p>Тел.: <span>+7961203177</span></p>
+						<p>Магазин находится на территории ЗАО ПФ "Боровская"</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="guarantee-b">
+			<h2>Гарантируем:</h2>
+			<div class="core">
+				<ul>
+					<li>
+						<p><span>Ручной выбор<br> сырья</span></p>
+						<i class="icon-1"></i>
+					</li>
+					<li>
+						<p><span>Сертифицировано</span></p>
+						<i class="icon-2"></i>
+					</li>
+					<li>
+						<p><span>Единый<br> склад отгрузки</span></p>
+						<i class="icon-3"></i>
+					</li>
+					<li>
+						<p><span>Отправка<br> во все регионы</span></p>
+						<i class="icon-4"></i>
+					</li>
+					<li>
+						<p><span>Только<br> экологичные  товары</span></p>
+						<i class="icon-5"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<footer>
+		<div class="copy">
+			<p>«Идальго» © 2010-2016</p>
+			<p><img src="./img/mail-icon.png" width="16" height="12" alt=""><a href="mailto:vetvrach-horse@mail.ru">vetvrach-horse@mail.ru</a></p>
+		</div>
+		<div class="delivery">
+			<ul>
+				<li>Доставка в любой регион РФ</li>
+				<li>Принимаем<br> к оплате:</li>
+			</ul>
+			<p>visa, mastercard</p>
+		</div>
+		<div class="phones">
+			<ul>
+				<li><a href="tel:+73852523764">+7 (3852) 52-37-64</a></li>
+				<li><a href="tel:+79236440644">+7 923 644-0-644</a></li>
+			</ul>
+			<p><span data-open="ask">задать вопрос</span></p>
+		</div>
+		<p class="author">Разработка сайта — <a href="http://letsrock.pro" target="_blank"><img src="./img/letsrock-logo.png" width="89" height="20" alt=""></a></p>
+	</footer>
+	<div class="fade"></div>
+	<div class="modal" data-target="enter">
+		<span class="close"></span>
+		<h3>Вход</h3>
+		<form class="standart">
+			<p>
+				<span>E-mail</span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span>Пароль</span>
+				<input type="text" value="">
+			</p>
+			<h6 class="remember"><label><input type="checkbox">Запомнить меня</label></h6>
+			<h6 class="links">
+				<a href="#">Забыли пароль?</a>
+				<a href="#">Регистрация</a>
+			</h6>
+			<button class="standart">Войти</button>
+			<!--<h6 class="error">Заполните, пожалуйста, все поля</h6>-->
+		</form>
+	</div>
+	<div class="modal" data-target="ask">
+		<span class="close"></span>
+		<h3>Задать <span>вопрос</span></h3>
+		<form class="standart">
+			<p>
+				<span>Представьтесь, пожалуйста *</span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span>Телефон *</span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span>E-mail *</span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span>Ваш вопрос *</span>
+				<textarea cols="60" rows="4"></textarea>
+			</p>
+			<h6 class="tip">* - поля, обязательные для заполнения</h6>
+			<button class="standart">Задать вопрос</button>
+			<!--<h6 class="error">Заполните, пожалуйста, все поля</h6>-->
+		</form>
+	</div>
+	<div class="go-top">
+		<p>Наверх</p>
+	</div>
+	<script src="./js/easing.js"></script>
+	<script src="./js/jcarousel.js"></script>
+	<script src="./js/masonry.js"></script>
+	<script src="./js/mobile.js"></script>
+	<script src="./js/slides.js"></script>
+	<script src="./js/uniform.js"></script>
+	<script src="./js/dynamic.js"></script>
+</body>
+</html>

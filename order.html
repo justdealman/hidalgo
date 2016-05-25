@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Hidalgo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1060, user-scalable=yes">
+	<!--<link href="./favicon.ico" rel="shortcut icon">-->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/jquery.js"></script>
+	<!--[if IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="panel">
+			<ul class="nav">
+				<li><a href="#">Наши  партнеры</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Галерея</a></li>
+			</ul>
+			<p class="lk-open"><span>Личный кабинет</span></p>
+			<ul class="lk-drop">
+				<li><a href="#" data-open="enter">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+				<li><a href="#">Личный кабинет</a></li>
+				<li><a href="#">Корзина</a></li>
+				<li><a href="#">Мои заказы</a></li>
+			</ul>
+		</div>
+		<header>
+			<a href="/"><img src="./img/logo.png" width="115" height="125" class="logo" alt=""></a>
+			<p class="description">Лечебно-профилактические препараты для лошадей на основе уникальных комплексов лекарственных трав Горного Алтая</p>
+			<ul class="phones">
+				<li><a href="tel:+73852523764">+7 (3852) 52-37-64</a></li>
+				<li><a href="tel:+79236440644">+7 923 644-0-644</a></li>
+			</ul>
+			<p class="ask"><span data-open="ask">задать вопрос</span></p>
+			<p class="basket">В вашей корзине <a href="#">2 товара</a><br>
+			на сумму 14 567 руб.</p>
+			<div class="search">
+				<input type="text" placeholder="Поиск">
+				<input type="submit" value="">
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="#">
+						<p>Каталог</p>
+						<i class="icon-1"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Бонусная программа</p>
+						<i class="icon-2"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Компания</p>
+						<i class="icon-3"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Доставка<br> и оплата</p>
+						<i class="icon-4"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Отзывы, награды</p>
+						<i class="icon-5"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Контакты</p>
+						<i class="icon-6"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="content">
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Мой кабинет</a></li>
+				<li>Оформление заказа</li>
+			</ul>
+			<h1>Оформление <span>заказа</span></h1>
+			<div class="order-process">
+				<div class="enter">
+					<h3>Пожалуйста, авторизуйтесь, если Вы зарегистрированы</h3>
+					<form class="standart">
+						<p>
+							<span>Email</span>
+							<input type="text" value="">
+						</p>
+						<p>
+							<span>Пароль</span>
+							<input type="text" value="">
+						</p>
+						<button class="standart">Войти</button>
+					</form>
+				</div>
+				<div class="new-user">
+					<h3>Оформление заказа для нового пользователя</h3>
+					<h5>Тип плательщика</h5>
+					<ul>
+						<li><label><input type="radio" name="r1">Физическое лицо</label></li>
+						<li><label><input type="radio" name="r1">Юридическое лицо</label></li>
+					</ul>
+					<h5>Выберите способ доставки</h5>
+					<ul>
+						<li><label><input type="radio" name="r2">Самовывоз</label></li>
+						<li><label><input type="radio" name="r2">Доставка</label></li>
+					</ul>
+					<h5>Выберите способ оплаты</h5>
+					<ul>
+						<li><label><input type="radio" name="r3">Оплата на сайте банковской картой</label></li>
+						<li><label><input type="radio" name="r3">Наличными/картой в магазине</label></li>
+						<li><label><input type="radio" name="r3">Безналичный расчет</label></li>
+					</ul>
+				</div>
+				<div class="about">
+					<h3>Информация для оплаты и доставки заказа</h3>
+					<h5>Информация о покупателе</h5>
+					<form class="standart">
+						<p>
+							<span>Ф.И.О *</span>
+							<input type="text" value="">
+						</p>
+						<p>
+							<span>E-mail *</span>
+							<input type="text" value="">
+							<i>На этот адрес мы пришлем Вам информацию о заказе</i>
+						</p>
+						<p>
+							<span>Телефон *</span>
+							<input type="text" value="">
+							<i>Оператор позвонит Вам для подтверждения заказа</i>
+						</p>
+						<p>
+							<span>Адрес *</span>
+							<textarea cols="60" rows="5" value=""></textarea>
+							<i>Мы осуществляем доставку до вашего города<br> транспортной компанией. Узнать стоимость<br> доставке можно на сайте Деловые линии.</i>
+						</p>
+					</form>
+				</div>
+				<div class="basket-b">
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">Название товара</th>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="pic">
+										<img src="./pic/basket-1.jpg" width="71" height="64" alt="">
+									</div>
+								</td>
+								<td>
+									<h3><a href="#">Пантовит энерджи (pantovit standart)</a></h3>
+									<p class="code">Артикул: 922028</p>
+								</td>
+								<td>
+									<p class="price">1 500,<span>00</span><em class="rouble-icon">п</em></p>
+								</td>
+								<td>
+									<h6>2 шт.</h6>
+								</td>
+								<td>
+									<p class="sum">3 000,<span>00</span><em class="rouble-icon">п</em></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="pic">
+										<img src="./pic/basket-2.jpg" width="73" height="64" alt="">
+									</div>
+								</td>
+								<td>
+									<h3><a href="#">Пантовит энерджи (pantovit energy)</a></h3>
+									<p class="code">Артикул: 922028</p>
+								</td>
+								<td>
+									<p class="price">405,<span>00</span><em class="rouble-icon">п</em></p>
+								</td>
+								<td>
+									<h6>2 шт.</h6>
+								</td>
+								<td>
+									<p class="sum">810,<span>00</span><em class="rouble-icon">п</em></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="controls">
+						<div class="total">
+							<p>Товаров на сумму:</p>
+							<h5>43 000,<span>00</span><em class="rouble-icon">п</em></h5>
+						</div>
+					</div>
+					<div class="controls">
+						<div class="total">
+							<p>Итого:</p>
+							<h5>43 000,<span>00</span><em class="rouble-icon">п</em></h5>
+						</div>
+					</div>
+				</div>
+				<div class="more">
+					<h5>Дополнительная информация:</h5>
+					<form class="standart">
+						<p>
+							<span>Комментарии к заказу</span>
+							<textarea cols="120" rows="6" value=""></textarea>
+						</p>
+					</form>
+				</div>
+				<h6 class="agree"><label><input type="checkbox">Нажимая кнопку «Подтвердить заказ», я подтверждаю свою дееспособность, согласие на получение информации об оформлении и получении заказа, согласие на обработку персональных данных в соответствии с указанным здесь текстом</label></h6>
+				<button class="standart">Подтвердить заказ</button>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<footer>
+		<div class="copy">
+			<p>«Идальго» © 2010-2016</p>
+			<p><img src="./img/mail-icon.png" width="16" height="12" alt=""><a href="mailto:vetvrach-horse@mail.ru">vetvrach-horse@mail.ru</a></p>
+		</div>
+		<div class="delivery">
+			<ul>
+				<li>Доставка в любой регион РФ</li>
+				<li>Принимаем<br> к оплате:</li>
+			</ul>
+			<p>visa, mastercard</p>
+		</div>
+		<div class="phones">
+			<ul>
+				<li><a href="tel:+73852523764">+7 (3852) 52-37-64</a></li>
+				<li><a href="tel:+79236440644">+7 923 644-0-644</a></li>
+			</ul>
+			<p><span data-open="ask">задать вопрос</span></p>
+		</div>
+		<p class="author">Разработка сайта — <a href="http://letsrock.pro" target="_blank"><img src="./img/letsrock-logo.png" width="89" height="20" alt=""></a></p>
+	</footer>
+	<div class="fade"></div>
+	<div class="modal" data-target="enter">
+		<span class="close"></span>
+		<h3>Вход</h3>
+		<form class="standart">
+			<p>
+				<span>E-mail</span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span>Пароль</span>
+				<input type="text" value="">
+			</p>
+			<h6 class="remember"><label><input type="checkbox">Запомнить меня</label></h6>
+			<h6 class="links">
+				<a href="#">Забыли пароль?</a>
+				<a href="#">Регистрация</a>
+			</h6>
+			<button class="standart">Войти</button>
+			<!--<h6 class="error">Заполните, пожалуйста, все поля</h6>-->
+		</form>
+	</div>
+	<div class="modal" data-target="ask">
+		<span class="close"></span>
+		<h3>Задать <span>вопрос</span></h3>
+		<form class="standart">
+			<p>
+				<span>Представьтесь, пожалуйста *</span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span>Телефон *</span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span>E-mail *</span>
+				<input type="text" value="">
+			</p>
+			<p>
+				<span>Ваш вопрос *</span>
+				<textarea cols="60" rows="4"></textarea>
+			</p>
+			<h6 class="tip">* - поля, обязательные для заполнения</h6>
+			<button class="standart">Задать вопрос</button>
+			<!--<h6 class="error">Заполните, пожалуйста, все поля</h6>-->
+		</form>
+	</div>
+	<div class="go-top">
+		<p>Наверх</p>
+	</div>
+	<script src="./js/easing.js"></script>
+	<script src="./js/jcarousel.js"></script>
+	<script src="./js/masonry.js"></script>
+	<script src="./js/mobile.js"></script>
+	<script src="./js/slides.js"></script>
+	<script src="./js/uniform.js"></script>
+	<script src="./js/dynamic.js"></script>
+</body>
+</html>
